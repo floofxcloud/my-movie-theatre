@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Movie Theater</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Welcome to [Your Name]'s Theater 🍿</h1>
+    <marquee>Now Showing: Your Favorite Trailer!</marquee>
+  </header>
+
+  <section class="screen">
+    <video id="trailer" controls>
+      <source src="media/trailer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="buttons">
+      <button onclick="playAgain()">Play Again</button>
+      <button onclick="rateMovie()">Rate Movie</button>
+    </div>
+  </section>
+
+  <script>
+    function playAgain() {
+      var video = document.getElementById('trailer');
+      video.currentTime = 0;
+      video.play();
+    }
+
+    function rateMovie() {
+      alert('Thanks for rating! 🎥');
+    }
+  </script>
+
+</body>
+</html>
