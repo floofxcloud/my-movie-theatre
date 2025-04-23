@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Cinzel', serif;
-  background: radial-gradient(circle, #000000, #1a1a1a);
-  color: #fff;
+  background-color: black;
+  color: white;
   text-align: center;
   padding: 20px;
 }
@@ -19,18 +19,33 @@ marquee {
 }
 
 .screen {
-  border: 8px solid #ffffff;
-  box-shadow: 0 0 30px #ffcc00;
+  border: 8px solid white;
+  box-shadow: 0 0 20px #ffcc00;
   padding: 20px;
   display: inline-block;
-  background: #333;
+  background-color: #333;
   border-radius: 10px;
+  max-width: 90%;
+}
+
+.video-container {
+  border: 3px solid #ff4500;
+  border-radius: 5px;
+  padding: 5px;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% { border-color: red; }
+  33% { border-color: yellow; }
+  66% { border-color: blue; }
+  100% { border-color: green; }
 }
 
 video {
   width: 100%;
   max-width: 600px;
-  border-radius: 10px;
+  display: block;
 }
 
 .buttons {
@@ -46,9 +61,24 @@ button {
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 button:hover {
   background-color: #ffd633;
+}
+
+/* Simple responsive design */
+@media (max-width: 600px) {
+  .screen {
+    padding: 10px;
+    border-width: 5px;
+  }
+  
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  button {
+    padding: 8px 16px;
+  }
 }
