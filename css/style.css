@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background: radial-gradient(circle, #000000, #1a1a1a);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+marquee {
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.screen {
+  border: 8px solid #ffffff;
+  box-shadow: 0 0 30px #ffcc00;
+  padding: 20px;
+  display: inline-block;
+  background: #333;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  background-color: #ffcc00;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ffd633;
+}
