@@ -22,10 +22,14 @@ marquee {
   border: 8px solid white;
   box-shadow: 0 0 20px #ffcc00;
   padding: 20px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #333;
   border-radius: 10px;
-  max-width: 90%;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .video-container {
@@ -33,6 +37,8 @@ marquee {
   border-radius: 5px;
   padding: 5px;
   animation: blink 3s infinite;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 @keyframes blink {
@@ -44,12 +50,13 @@ marquee {
 
 video {
   width: 100%;
-  max-width: 600px;
   display: block;
 }
 
 .buttons {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -67,18 +74,19 @@ button:hover {
   background-color: #ffd633;
 }
 
-/* Simple responsive design */
 @media (max-width: 600px) {
   .screen {
-    padding: 10px;
+    width: 95%;
+    padding: 15px;
     border-width: 5px;
   }
-  
+
   header h1 {
     font-size: 1.8em;
   }
-  
+
   button {
     padding: 8px 16px;
+    font-size: 0.9em;
   }
 }
